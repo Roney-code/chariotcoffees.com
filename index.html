@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHARIOTS COFFEES AND BARISTA ACADEMY LTD</title>
+  <meta name="description" content="Premium coffee training and barista academy offering professional courses and high-quality coffee products">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    .scene {
+      perspective: 1200px;
+    }
+
+    .card {
+      transform-style: preserve-3d;
+      transition: transform 0.3s ease, opacity 1s ease;
+    }
+
+    .fade-out {
+      opacity: 0;
+    }
+
+    @keyframes slideLeft {
+      0% {
+        transform: translateX(100%);
+      }
+
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+    .animate-slide-left {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: slideLeft 15s linear infinite;
+    }
+    
+    /* Mobile menu styles */
+    .mobile-menu {
+      display: none;
+    }
+    
+    .mobile-menu.active {
+      display: block;
+    }
+    
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Accessibility focus styles */
+    a:focus, button:focus {
+      outline: 2px solid orange;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex flex-col">
+
+  <!-- Navbar -->
+  <header class="bg-orange-800 shadow-md sticky top-0 z-50">
+    <nav class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <div class="flex items-center gap-4">
+        <img src="images/logo.png" alt="Chariots Logo" class="w-12 h-12 rounded-full shadow-md" />
+        <h1 class="text-xl font-bold">CHARIOTS COFFEES AND BARISTA ACADEMY LTD</h1>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex gap-4 text-sm sm:text-base">
+        <li><a href="index.html" class="hover:text-gray-300 px-2 py-1 rounded transition">Home</a></li>
+        <li><a href="About.html" class="hover:text-gray-300 px-2 py-1 rounded transition">About</a></li>
+        <li><a href="Menu.html" class="hover:text-gray-300 px-2 py-1 rounded transition">Menu</a></li>
+        <li><a href="products.html" class="hover:text-gray-300 px-2 py-1 rounded transition">Products</a></li>
+        <li><a href="Contact Us.html" class="hover:text-gray-300 px-2 py-1 rounded transition">Contact</a></li>
+      </ul>
+      
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="mobile-menu bg-orange-900 md:hidden">
+      <ul class="flex flex-col gap-2 p-4">
+        <li><a href="index.html" class="block hover:bg-orange-700 px-4 py-2 rounded transition">Home</a></li>
+        <li><a href="About.html" class="block hover:bg-orange-700 px-4 py-2 rounded transition">About</a></li>
+        <li><a href="Menu.html" class="block hover:bg-orange-700 px-4 py-2 rounded transition">Menu</a></li>
+        <li><a href="products.html" class="block hover:bg-orange-700 px-4 py-2 rounded transition">Products</a></li>
+        <li><a href="Contact Us.html" class="block hover:bg-orange-700 px-4 py-2 rounded transition">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Animated Welcome Banner -->
+  <section class="relative min-h-[60vh] flex items-center justify-center text-center bg-cover bg-center"
+    style="background-image: url('vecteezy_coffee-beans-and-a-cup-of-black-coffee-on-a-wooden-table_24529879.jpg');">
+    <div class="absolute inset-0 bg-black bg-opacity-70"></div>
+    <div class="relative z-10 space-y-6 px-4">
+      <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold animate-slide-left">
+        WELCOME TO CHARIOTS COFFEES AND BARISTA ACADEMY LTD
+      </h2>
+      <p class="text-lg md:text-xl max-w-3xl mx-auto">
+        Empowering baristas with excellence in coffee craft & education.
+      </p>
+      <div class="pt-4">
+        <a href="About.html" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-6 rounded-full transition duration-300 inline-block">
+          Learn More About Us
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3D Gallery -->
+  <main class="flex-grow px-6 py-10">
+    <div class="max-w-7xl mx-auto">
+      <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center">Our Coffee Gallery</h2>
+      <div class="scene flex gap-6 overflow-x-auto py-6 px-2">
+        <div class="card flex-shrink-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl" data-depth="1">
+          <img src="images/ron.png" alt="Barista preparing coffee" class="w-full h-full object-cover" />
+        </div>
+        <div class="card flex-shrink-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl" data-depth="1.4">
+          <img src="images/ron6.png" alt="Coffee beans close-up" class="w-full h-full object-cover" />
+        </div>
+        <div class="card flex-shrink-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl" data-depth="1.8">
+          <img src="images/2 (5).jpg" alt="Coffee cup on table" class="w-full h-full object-cover" />
+        </div>
+        <div class="card flex-shrink-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl" data-depth="2.2">
+          <img src="images/simon 2.jpeg" alt="Barista training session" class="w-full h-full object-cover" />
+        </div>
+        <div class="card flex-shrink-0 w-64 h-64 rounded-2xl overflow-hidden shadow-2xl" data-depth="2.5">
+          <img src="images/simon.jpeg" alt="Coffee brewing equipment" class="w-full h-full object-cover" />
+        </div>
+      </div>
+    </div>
+    
+    <!-- Call to Action Section -->
+    <section class="max-w-7xl mx-auto mt-16 bg-gray-800 rounded-xl p-8 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Ready to Start Your Barista Journey?</h2>
+      <p class="mb-6 max-w-2xl mx-auto">Join our professional barista training programs and learn from industry experts.</p>
+      <a href="Contact Us.html" class="bg-orange-600 hover:bg-orange-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-block">
+        Enroll Now
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-10">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="images/logo.png" alt="Chariots Logo" class="w-10 h-10 rounded-full" />
+            <h3 class="text-lg font-semibold text-white">CHARIOTS COFFEES</h3>
+          </div>
+          <p class="text-sm">
+            Empowering baristas and coffee lovers through quality, education, and sustainable practices.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-orange-400 transition">Home</a></li>
+            <li><a href="About.html" class="hover:text-orange-400 transition">About Us</a></li>
+            <li><a href="Menu.html" class="hover:text-orange-400 transition">Menu</a></li>
+            <li><a href="products.html" class="hover:text-orange-400 transition">Products</a></li>
+            <li><a href="Contact Us.html" class="hover:text-orange-400 transition">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <address class="not-italic text-sm">
+            <p class="mb-2 flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-2 text-orange-400"></i>
+              <span>Spring Road Plot 61 Bugolobi</span>
+            </p>
+            <p class="mb-2 flex items-center">
+              <i class="fas fa-phone mr-2 text-orange-400"></i>
+              +256 704 073 794, +256 761 073 794
+            </p>
+            <p class="flex items-center">
+              <i class="fas fa-envelope mr-2 text-orange-400"></i>
+              chariotscoffees@gmail.com
+            </p>
+          </address>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4">Opening Hours</h4>
+          <ul class="space-y-2 text-sm">
+            <li class="flex justify-between">
+              <span>Monday - Friday</span>
+              <span>7:00 AM - 7:00 PM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Saturday</span>
+              <span>8:00 AM - 6:00 PM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Sunday</span>
+              <span>9:00 AM - 4:00 PM</span>
+            </li>
+          </ul>
+          
+          <div class="mt-6 flex space-x-4 text-xl">
+            <a href="#" class="hover:text-orange-400 transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-orange-400 transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-orange-400 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-orange-400 transition" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pt-6 border-t border-gray-700 text-center text-sm">
+        <p>&copy; 2025 CHARIOTS COFFEES AND BARISTA ACADEMY LTD. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 bg-orange-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 focus:outline-none" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- 3D Motion Script -->
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+    
+    // Back to top button
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopButton.classList.add('opacity-0', 'invisible');
+        backToTopButton.classList.remove('opacity-100', 'visible');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    
+    // 3D card effect
+    const cards = document.querySelectorAll(".card");
+
+    document.body.addEventListener("mousemove", (e) => {
+      const x = e.clientX / window.innerWidth - 0.5;
+      const y = e.clientY / window.innerHeight - 0.5;
+
+      cards.forEach(card => {
+        const depth = parseFloat(card.dataset.depth);
+        const rotateX = y * -25 * depth;
+        const rotateY = x * 25 * depth;
+        card.style.transform = `rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
+
+        const distance = Math.abs(x) + Math.abs(y);
+        if (distance > 0.7) {
+          card.classList.add("fade-out");
+        } else {
+          card.classList.remove("fade-out");
+        }
+      });
+    });
+
+    document.body.addEventListener("mouseleave", () => {
+      cards.forEach(card => {
+        card.style.transform = `rotateX(0deg) rotateY(0deg)`;
+        card.classList.remove("fade-out");
+      });
+    });
+  </script>
+
+</body>
+
+</html>

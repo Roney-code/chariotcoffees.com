@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us – CHARIOTS COFFEES & BARISTA ACADEMY</title>
+  <meta name="description" content="Learn about Chariots Coffees - our mission, vision, and commitment to specialty coffee and barista training in Africa">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    .bg-hero {
+      background-image: url('vecteezy_coffee-beans-and-a-cup-of-black-coffee-on-a-wooden-table_24529879.jpg');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.65);
+    }
+
+    /* Mobile menu styles */
+    .mobile-menu {
+      display: none;
+    }
+    
+    .mobile-menu.active {
+      display: block;
+    }
+    
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+    
+    /* Accessibility focus styles */
+    a:focus, button:focus {
+      outline: 2px solid orange;
+      outline-offset: 2px;
+    }
+    
+    /* Feature card hover effect */
+    .feature-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    
+    .feature-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-900 text-white flex flex-col min-h-screen">
+
+  <!-- Hero / Navbar -->
+  <header class="relative bg-hero h-96 md:h-screen/2 overlay flex items-center justify-center text-center">
+    <div class="absolute inset-0 bg-black/70 z-0"></div>
+    
+    <!-- Navigation -->
+    <nav class="z-10 w-full px-6 py-4 absolute top-0 left-0 flex justify-between items-center bg-gray-900/80 backdrop-blur-sm">
+      <div class="flex items-center gap-3">
+        <img src="images/logo.png" alt="Chariots Logo" class="w-12 h-12 rounded-full shadow-md" />
+        <h1 class="text-xl font-semibold">CHARIOTS COFFEES & BARISTA ACADEMY</h1>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <ul class="hidden md:flex gap-5 text-sm sm:text-base font-medium">
+        <li><a href="index.html" class="hover:text-orange-400 px-3 py-1 rounded transition">Home</a></li>
+        <li><a href="About.html" class="text-orange-400 underline underline-offset-4 px-3 py-1 rounded">About</a></li>
+        <li><a href="Menu.html" class="hover:text-orange-400 px-3 py-1 rounded transition">Menu</a></li>
+        <li><a href="products.html" class="hover:text-orange-400 px-3 py-1 rounded transition">Products</a></li>
+        <li><a href="Contact Us.html" class="hover:text-orange-400 px-3 py-1 rounded transition">Contact</a></li>
+        
+      </ul>
+      
+      <!-- Mobile menu button -->
+      <button id="mobile-menu-button" class="md:hidden text-2xl focus:outline-none" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="mobile-menu absolute top-20 left-0 right-0 bg-gray-900/95 backdrop-blur-sm z-20 md:hidden">
+      <ul class="flex flex-col gap-1 p-4">
+        <li><a href="index.html" class="block hover:bg-gray-800 px-4 py-3 rounded transition">Home</a></li>
+        <li><a href="About.html" class="block bg-orange-900 text-white px-4 py-3 rounded">About</a></li>
+        <li><a href="Menu.html" class="block hover:bg-gray-800 px-4 py-3 rounded transition">Menu</a></li>
+        <li><a href="products.html" class="block hover:bg-gray-800 px-4 py-3 rounded transition">Products</a></li>
+        <li><a href="Contact Us.html" class="block hover:bg-gray-800 px-4 py-3 rounded transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="z-10 text-white mt-16 px-4">
+      <h1 class="text-4xl md:text-5xl font-bold">About Chariots Coffees</h1>
+      <p class="mt-4 text-lg md:text-xl text-orange-200 max-w-2xl mx-auto">Crafting Excellence in Every Cup Since 2018</p>
+      <a href="#our-story" class="mt-8 inline-block bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 px-6 rounded-full transition duration-300">
+        Explore Our Story
+      </a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="flex-grow bg-gray-900 px-6 md:px-16 py-16 space-y-20">
+    <!-- Our Story -->
+    <section id="our-story" class="max-w-6xl mx-auto space-y-10">
+      <div class="text-center">
+        <span class="text-orange-400 font-semibold">OUR JOURNEY</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">Who We Are</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Was first registered in Uganda in 2018 as (A Single Member Company SMC) under the Directorship of Mr. Simon Ochen Eidodo.But later in 2024 it acquired a new status as a private
+            limited company upon admitting Mr. Gilbert Etomet as a Co- Director.
+          </p>
+          <p class="text-lg text-gray-300 leading-relaxed mb-6">
+            Today, the company amongst its major goals, directly impacts lives through its academy which
+            focuses on training young people into becoming seasonal Coffee Baristas and in recent years
+            over 2000 young men and women have passed through the Academy successfully and are now
+            spread all over the world excelling as Baristas amongst others.
+          </p>
+          <div class="flex flex-wrap gap-4 mt-8">
+            <div class="bg-gray-800/50 px-4 py-3 rounded-lg border-l-4 border-orange-500">
+              <h3 class="font-bold text-white">50+</h3>
+              <p class="text-sm text-gray-400">Certified Baristas Trained</p>
+            </div>
+            <div class="bg-gray-800/50 px-4 py-3 rounded-lg border-l-4 border-orange-500">
+              <h3 class="font-bold text-white">12</h3>
+              <p class="text-sm text-gray-400">Coffee Varieties Sourced</p>
+            </div>
+            <div class="bg-gray-800/50 px-4 py-3 rounded-lg border-l-4 border-orange-500">
+              <h3 class="font-bold text-white">5</h3>
+              <p class="text-sm text-gray-400">Awards Won</p>
+            </div>
+          </div>
+        </div>
+        <div class="rounded-xl overflow-hidden shadow-2xl">
+          <img src="vecteezy_coffee-beans-and-a-cup-of-black-coffee-on-a-wooden-table_24529879.jpg" alt="Chariots Coffees team working together" class="w-full h-auto object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- What We Offer -->
+    <section class="max-w-6xl mx-auto space-y-10">
+      <div class="text-center">
+        <span class="text-orange-400 font-semibold">OUR EXPERTISE</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">What We Offer</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="feature-card bg-gray-800 p-6 rounded-lg">
+          <div class="text-orange-400 text-3xl mb-4">
+            <i class="fas fa-coffee"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Specialty Coffee</h3>
+          <p class="text-gray-300">
+            Single-origin and custom blends roasted in-house to perfection. Experience the full spectrum of coffee flavors from Africa's finest growing regions.
+          </p>
+        </div>
+        
+        <div class="feature-card bg-gray-800 p-6 rounded-lg">
+          <div class="text-orange-400 text-3xl mb-4">
+            <i class="fas fa-chalkboard-teacher"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Barista Training</h3>
+          <p class="text-gray-300">
+            Comprehensive courses from beginner to professional level. Learn latte art, espresso extraction, and coffee science from certified trainers.
+          </p>
+        </div>
+        
+        <div class="feature-card bg-gray-800 p-6 rounded-lg">
+          <div class="text-orange-400 text-3xl mb-4">
+            <i class="fas fa-warehouse"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Wholesale Supply</h3>
+          <p class="text-gray-300">
+            Premium coffee beans and equipment for businesses. Custom roasting profiles tailored to your establishment's needs.
+          </p>
+        </div>
+        
+        <div class="feature-card bg-gray-800 p-6 rounded-lg">
+          <div class="text-orange-400 text-3xl mb-4">
+            <i class="fas fa-mug-hot"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Café Experience</h3>
+          <p class="text-gray-300">
+            Artisanal beverages and a welcoming space to work or relax. Seasonal specials featuring innovative brewing methods.
+          </p>
+        </div>
+        
+        <div class="feature-card bg-gray-800 p-6 rounded-lg">
+          <div class="text-orange-400 text-3xl mb-4">
+            <i class="fas fa-globe-africa"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Sustainability</h3>
+          <p class="text-gray-300">
+            Ethical sourcing and eco-friendly practices. We partner directly with farmers to ensure fair compensation and quality.
+          </p>
+        </div>
+        
+        <div class="feature-card bg-gray-800 p-6 rounded-lg">
+          <div class="text-orange-400 text-3xl mb-4">
+            <i class="fas fa-calendar-alt"></i>
+          </div>
+          <h3 class="text-xl font-bold mb-3">Events</h3>
+          <p class="text-gray-300">
+            Cupping sessions, workshops, and community events. Join our monthly coffee enthusiast meetups and tastings.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Vision -->
+    <section class="max-w-6xl mx-auto space-y-10">
+      <div class="text-center">
+        <span class="text-orange-400 font-semibold">OUR FUTURE</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">Vision & Values</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-10 items-center">
+        <div class="order-2 md:order-1">
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-xl font-bold text-orange-400 mb-2">Vision Statement</h3>
+              <p class="text-gray-300">
+                To be Africa's leading coffee academy and roastery, where knowledge meets passion and every cup tells a story. We aim to raise the bar of quality, ethics, and innovation in the coffee industry.
+              </p>
+            </div>
+            
+            <div>
+              <h3 class="text-xl font-bold text-orange-400 mb-2">Core Values</h3>
+              <ul class="space-y-3 text-gray-300">
+                <li class="flex items-start">
+                  <i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+                  <span>Quality: Uncompromising standards in every bean and brew</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+                  <span>Education: Empowering through knowledge and skills</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+                  <span>Sustainability: Ethical sourcing and environmental responsibility</span>
+                </li>
+                <li class="flex items-start">
+                  <i class="fas fa-check text-orange-400 mt-1 mr-2"></i>
+                  <span>Community: Building connections through coffee culture</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        
+        <div class="order-1 md:order-2 rounded-xl overflow-hidden shadow-2xl">
+          <img src="vecteezy_coffee-beans-and-a-cup-of-black-coffee-on-a-wooden-table_24529879.jpg" alt="Coffee beans being roasted" class="w-full h-auto object-cover">
+        </div>
+      </div>
+    </section>
+
+    <!-- Meet the Team -->
+    <section class="max-w-6xl mx-auto space-y-10">
+      <div class="text-center">
+        <span class="text-orange-400 font-semibold">OUR PEOPLE</span>
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">Meet the Founders</h2>
+      </div>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="md:flex">
+            <div class="md:w-1/3">
+              <img src="Capture.PNG" alt="Simon Mwangi, Co-founder" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 md:w-2/3">
+              <h3 class="text-xl font-bold">OCHEN SIMON EIDODO</h3>
+              <p class="text-orange-400 mb-4">Founder & Head Roaster</p>
+              <p class="text-gray-300 mb-4">
+                Ochen Simon Eidodo is the visionary Director and driving force behind Chariots Coffees and Barista Academy ltd.With a deep passion for coffee and a commitment to excellence, Under his leadership, Chariots Coffees and Barista Academy ltd has become synonymous with
+                premium coffee roasting, exceptional barista training, and community engagement
+              </p>
+              <div class="flex space-x-4 text-lg">
+                <a href="#" class="text-gray-400 hover:text-orange-400" aria-label="Simon's Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-orange-400" aria-label="Simon's LinkedIn"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+          <div class="md:flex">
+            <div class="md:w-1/3">
+              <img src="images/founder2.jpg" alt="Ronald Kipchirchir, Co-founder" class="w-full h-full object-cover">
+            </div>
+            <div class="p-6 md:w-2/3">
+              <h3 class="text-xl font-bold">Mr. Gilbert Etomet</h3>
+              <p class="text-orange-400 mb-4">Co-founder</p>
+              <p class="text-gray-300 mb-4">
+                Ronald's competition-winning barista skills and teaching experience make him the perfect guide for aspiring coffee professionals. He holds SCA Trainer certification in multiple disciplines.
+              </p>
+              <div class="flex space-x-4 text-lg">
+                <a href="#" class="text-gray-400 hover:text-orange-400" aria-label="Ronald's Twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-orange-400" aria-label="Ronald's LinkedIn"><i class="fab fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-400 py-12">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-4 gap-10 mb-10">
+        <div>
+          <div class="flex items-center gap-3 mb-4">
+            <img src="images/logo.png" alt="Chariots Logo" class="w-10 h-10 rounded-full" />
+            <h3 class="text-lg font-semibold text-white">CHARIOTS COFFEES</h3>
+          </div>
+          <p class="text-sm">
+            Empowering baristas and coffee lovers through quality, education, and sustainable practices.
+          </p>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+          <ul class="space-y-2">
+            <li><a href="index.html" class="hover:text-orange-400 transition">Home</a></li>
+            <li><a href="About.html" class="hover:text-orange-400 transition">About Us</a></li>
+            <li><a href="Menu.html" class="hover:text-orange-400 transition">Menu</a></li>
+            <li><a href="products.html" class="hover:text-orange-400 transition">Products</a></li>
+            <li><a href="Contact Us.html" class="hover:text-orange-400 transition">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4">Contact</h4>
+          <address class="not-italic text-sm">
+            <p class="mb-2 flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-2 text-orange-400"></i>
+              <span>Spring Road Plot 61 Bugolobi</span>
+            </p>
+            <p class="mb-2 flex items-center">
+              <i class="fas fa-phone mr-2 text-orange-400"></i>
+              +256 704 073 794, +256 761 073 794
+            </p>
+            <p class="flex items-center">
+              <i class="fas fa-envelope mr-2 text-orange-400"></i>
+              chariotscoffees@gmail.com
+            </p>
+          </address>
+        </div>
+        
+        <div>
+          <h4 class="text-white font-semibold mb-4">Opening Hours</h4>
+          <ul class="space-y-2 text-sm">
+            <li class="flex justify-between">
+              <span>Monday - Friday</span>
+              <span>7:00 AM - 7:00 PM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Saturday</span>
+              <span>8:00 AM - 6:00 PM</span>
+            </li>
+            <li class="flex justify-between">
+              <span>Sunday</span>
+              <span>9:00 AM - 4:00 PM</span>
+            </li>
+          </ul>
+          
+          <div class="mt-6 flex space-x-4 text-xl">
+            <a href="#" class="hover:text-orange-400 transition" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-orange-400 transition" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="hover:text-orange-400 transition" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="hover:text-orange-400 transition" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="pt-6 border-t border-gray-700 text-center text-sm">
+        <p>&copy; 2025 CHARIOTS COFFEES AND BARISTA ACADEMY LTD. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="fixed bottom-6 right-6 bg-orange-600 text-white p-3 rounded-full shadow-lg opacity-0 invisible transition-all duration-300 focus:outline-none" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('active');
+    });
+    
+    // Back to top button
+    const backToTopButton = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.pageYOffset > 300) {
+        backToTopButton.classList.remove('opacity-0', 'invisible');
+        backToTopButton.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopButton.classList.add('opacity-0', 'invisible');
+        backToTopButton.classList.remove('opacity-100', 'visible');
+      }
+    });
+    
+    backToTopButton.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+
+</html>
